@@ -1,2 +1,2 @@
 # flightpanel
-A compact F/A-18C cockpit for flight simulation computer games
+Hardware and firmware for a USB input device for flight simulation computer games.
