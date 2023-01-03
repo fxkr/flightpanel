@@ -2,6 +2,9 @@
 
 Hardware and firmware for a USB input device for flight simulation computer games.
 
+Project status: everything (hardware & software) works, and I've used it successfully. Not everything published yet; need to publish remaining files. Thinking about a version 2.
+
+
 # System overview
 
 ```
