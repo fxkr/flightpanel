@@ -8,11 +8,11 @@ Project status: everything (hardware & software) works, and I've used it success
 # System overview
 
 ```
-                                                         up to 96x
-┌──────────┐   ┌─────────────────┐   ┌──────────────────┐  ┌──────┐
-│          │   │                 │   │                  ├──┤Button│
-│          │USB│ Microcontroller │I2C│    Up to ~8      │  └──────┘
-│ Computer ├───┤                 ├───┤ GPIO controllers │up to ~8x  up to 56x
+                                                           up to 48x per ctrl
+┌──────────┐   ┌─────────────────┐   ┌──────────────────┐  ┌────────────────┐
+│          │   │                 │   │                  ├──┤Button / Encoder│
+│          │USB│ Microcontroller │I2C│    Up to 8       │  └────────────────┘
+│ Computer ├───┤                 ├───┤ GPIO controllers │  up to 8x  up to 56x
 │          │   │   Atmega32u4    │   │   PCA9575PW2     │  ┌──────┐  ┌──────┐
 │          │   │                 │   │                  ├──┤Matrix├──┤Button│
 └──────────┘   └─────────────────┘   └──────────────────┘  └──────┘  └──────┘
