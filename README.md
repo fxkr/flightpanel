@@ -8,13 +8,13 @@ Project status: everything (hardware & software) works, and I've used it success
 # System overview
 
 ```
-                                                           up to 48x per ctrl
+                                    up to 15x (3x per PCB)   up to 16x each
 ┌──────────┐   ┌─────────────────┐   ┌──────────────────┐  ┌────────────────┐
 │          │   │                 │   │                  ├──┤Button / Encoder│
-│          │USB│ Microcontroller │I2C│    Up to 8       │  └────────────────┘
-│ Computer ├───┤                 ├───┤ GPIO controllers │  up to 8x  up to 56x
-│          │   │   Atmega32u4    │   │   PCA9575PW2     │  ┌──────┐  ┌──────┐
-│          │   │                 │   │                  ├──┤Matrix├──┤Button│
+│          │USB│ Microcontroller │I2C│  GPIO expanders  │  └────────────────┘
+│ Computer ├───┤                 ├───┤                  │  up to 2x  up to 56x
+│          │   │   Atmega32u4    │   │  NXP PCA9575PW2  │  ┌──────┐  ┌──────┐
+│          │   │                 │   │   (3 per PCB)    ├──┤Matrix├──┤Button│
 └──────────┘   └─────────────────┘   └──────────────────┘  └──────┘  └──────┘
  standard       standard PCB,         custom PCB           custom PCB
  drivers        custom firmware
